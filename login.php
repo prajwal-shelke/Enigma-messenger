@@ -1,11 +1,11 @@
 <?php 
   session_start();
   if(isset($_SESSION['unique_id'])){
-    header("location: users.php");
+    header("location: https://enigma-messenger.herokuapp.com/users.php");
   }
 ?>
 
-<?php include_once "header.php"; ?>
+<?php include_once "https://enigma-messenger.herokuapp.com/header.php"; ?>
 <body>
   <div class="wrapper">
     <section class="form login">
@@ -25,12 +25,12 @@
           <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
-      <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div>
+      <div class="link">Not yet signed up? <a href="https://enigma-messenger.herokuapp.com/">Signup now</a></div>
     </section>
   </div>
   
-  <script src="javascript/pass-show-hide.js"></script>
-  <script src="javascript/login.js"></script>
+  <script src="https://enigma-messenger.herokuapp.com/javascript/pass-show-hide.js"></script>
+  <script src="https://enigma-messenger.herokuapp.com/javascript/login.js"></script>
 
 </body>
 </html>

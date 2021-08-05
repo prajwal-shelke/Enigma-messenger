@@ -5,7 +5,7 @@
   }
 ?>
 
-<?php include_once "header.php"; ?>
+<?php include_once "https://enigma-messenger.herokuapp.com/header.php"; ?>
 <body>
   <div class="wrapper">
     <section class="form signup">
@@ -39,12 +39,12 @@
           <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
-      <div class="link">Already signed up? <a href="login.php">Login now</a></div>
+      <div class="link">Already signed up? <a href="https://enigma-messenger.herokuapp.com/login.php">Login now</a></div>
     </section>
   </div>
 
-  <script src="javascript/pass-show-hide.js"></script>
-  <script src="javascript/signup.js"></script>
+  <script src="https://enigma-messenger.herokuapp.com/javascript/pass-show-hide.js"></script>
+  <script src="https://enigma-messenger.herokuapp.com/javascript/signup.js"></script>
 
 </body>
 </html>
