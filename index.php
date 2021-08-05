@@ -1,7 +1,7 @@
 <?php 
   session_start();
   if(isset($_SESSION['unique_id'])){
-    header("location: users.php");
+    header("location: https://enigma-messenger.herokuapp.com/users.php");
   }
 ?>
 
@@ -43,8 +43,8 @@
     </section>
   </div>
 
-  <script src="https://enigma-messenger.herokuapp.com/javascript/pass-show-hide.js"></script>
-  <script src="https://enigma-messenger.herokuapp.com/javascript/signup.js"></script>
+  <script src="javascript/pass-show-hide.js"></script>
+  <script src="javascript/signup.js"></script>
 
 </body>
 </html>

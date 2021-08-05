@@ -5,7 +5,7 @@
   }
 ?>
 
-<?php include_once "https://enigma-messenger.herokuapp.com/header.php"; ?>
+<?php include_once "header.php"; ?>
 <body>
   <div class="wrapper">
     <section class="form login">
@@ -29,8 +29,8 @@
     </section>
   </div>
   
-  <script src="https://enigma-messenger.herokuapp.com/javascript/pass-show-hide.js"></script>
-  <script src="https://enigma-messenger.herokuapp.com/javascript/login.js"></script>
+  <script src="javascript/pass-show-hide.js"></script>
+  <script src="javascript/login.js"></script>
 
 </body>
 </html>

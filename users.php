@@ -1,11 +1,11 @@
 <?php 
   session_start();
-  include_once "https://enigma-messenger.herokuapp.com/php/config.php";
+  include_once "config.php";
   if(!isset($_SESSION['unique_id'])){
     header("location: https://enigma-messenger.herokuapp.com/login.php");
   }
 ?>
-<?php include_once "https://enigma-messenger.herokuapp.com/header.php"; ?>
+<?php include_once "header.php"; ?>
 <body>
   <div class="wrapper">
     <section class="users">
@@ -17,7 +17,7 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-          <img src="https://enigma-messenger.herokuapp.com/php/images/<?php echo $row['img']; ?>" alt="">
+          <img src="php/images/<?php echo $row['img']; ?>" alt="">
           <div class="details">
             <span><?php echo $row['fname']. " " . $row['lname'] ?></span>
             <p><?php echo $row['status']; ?></p>
@@ -36,7 +36,7 @@
     </section>
   </div>
 
-  <script src="https://enigma-messenger.herokuapp.com/javascript/users.js"></script>
+  <script src="javascript/users.js"></script>
 
 </body>
 </html>
