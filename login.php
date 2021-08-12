@@ -1,7 +1,7 @@
 <?php 
   session_start();
   if(isset($_SESSION['unique_id'])){
-    header("location: https://enigma-messenger.herokuapp.com/users.php");
+    header("location: users.php");
   }
 ?>
 
@@ -25,7 +25,7 @@
           <input type="submit" name="submit" value="Continue to Chat">
         </div>
       </form>
-      <div class="link">Not yet signed up? <a href="https://enigma-messenger.herokuapp.com/">Signup now</a></div>
+      <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div>
     </section>
   </div>
   

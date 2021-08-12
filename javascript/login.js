@@ -8,13 +8,13 @@ form.onsubmit = (e)=>{
 
 continueBtn.onclick = ()=>{
     let xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://enigma-messenger.herokuapp.com/php/login.php", true);
+    xhr.open("POST", "php/login.php", true);
     xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
               let data = xhr.response;
               if(data === "success"){
-                location.href = "https://enigma-messenger.herokuapp.com/users.php";
+                location.href = "users.php";
               }else{
                 errorText.style.display = "block";
                 errorText.textContent = data;

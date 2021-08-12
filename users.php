@@ -1,8 +1,8 @@
 <?php 
   session_start();
-  include_once "config.php";
+  include_once "php/config.php";
   if(!isset($_SESSION['unique_id'])){
-    header("location: https://enigma-messenger.herokuapp.com/login.php");
+    header("location: login.php");
   }
 ?>
 <?php include_once "header.php"; ?>
@@ -23,7 +23,7 @@
             <p><?php echo $row['status']; ?></p>
           </div>
         </div>
-        <a href="https://enigma-messenger.herokuapp.com/php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
+        <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
       </header>
       <div class="search">
         <span class="text">Select an user to start chat</span>

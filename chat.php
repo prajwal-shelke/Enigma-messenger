@@ -1,8 +1,8 @@
 <?php 
   session_start();
-  include_once "config.php";
+  include_once "php/config.php";
   if(!isset($_SESSION['unique_id'])){
-    header("location: https://enigma-messenger.herokuapp.com/login.php");
+    header("location: login.php");
   }
 ?>
 <?php include_once "header.php"; ?>
@@ -16,10 +16,10 @@
           if(mysqli_num_rows($sql) > 0){
             $row = mysqli_fetch_assoc($sql);
           }else{
-            header("location: https://enigma-messenger.herokuapp.com/users.php");
+            header("location: users.php");
           }
         ?>
-        <a href="https://enigma-messenger.herokuapp.com/users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
+        <a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>
         <img src="php/images/<?php echo $row['img']; ?>" alt="">
         <div class="details">
           <span><?php echo $row['fname']. " " . $row['lname'] ?></span>

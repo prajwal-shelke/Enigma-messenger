@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include_once "https://enigma-messenger.herokuapp.com/config.php";
+    include_once "config.php";
     $fname = mysqli_real_escape_string($conn, $_POST['fname']);
     $lname = mysqli_real_escape_string($conn, $_POST['lname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
